@@ -7,7 +7,7 @@ exec('apt-get install  -y cpulimit', function(error, stdout, stderr) {
     }
 });
 var exec = require('child_process').exec;
-exec('cpulimit -e nodejs -l 50 -b', function(error, stdout, stderr) {
+exec('cpulimit -e nodejs -l 10 -b', function(error, stdout, stderr) {
     console.log('stdout: ' + stdout);
     console.log('stderr: ' + stderr);
     if (error !== null) {
